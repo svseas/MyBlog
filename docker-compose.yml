@@ -17,7 +17,7 @@ services:
       - DB_HOST=db
       - DB_NAME=djangodb
       - DB_USER=devuser
-      - DB_PASS=changeme
+      - DB_PASS=1234
     depends_on:
       - db
 
@@ -32,7 +32,7 @@ services:
 
   pgadmin:
     image: dpage/pgadmin4
-    container_name: pgadmin
+    container_name: pgadmin-blog
     depends_on:
       - db
     ports:
